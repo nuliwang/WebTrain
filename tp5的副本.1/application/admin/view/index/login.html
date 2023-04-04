@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>登陆 - 火车票系统</title>
+
+    <meta name="description" content="mobile first, app, web app, responsive, admin dashboard, flat, flat ui">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <!--<link rel="stylesheet" href="/img/train.jpg">-->
+
+
+    <!--[if lt IE 9]>
+
+    <script src="/js/ie/respond.min.js"></script>
+
+    <script src="/js/ie/html5.js"></script>
+
+    <![endif]-->
+
+<style>
+    body{
+        background-size: 2000px 600px;
+    }
+</style>
+
+</head>
+
+<body background="/images/timg.jpg"  >
+<!-- header -->
+<header id="header" class="navbar bg bg-black">
+
+    <a href="#" class="btn btn-link pull-right"></a>
+
+    <a class="navbar-brand" href="#"></a>
+
+</header>
+
+<!-- / header -->
+
+<section id="content" >
+    <div class="main padder" >
+
+        <div class="row">
+
+            <div class="col-lg-4 col-offset-4 m-t-large">
+                <div align="center">
+                    <img src="/images/tra.jpg"class="img-rounded" width="304" height="236">
+                </div>
+                <section class="panel">
+
+                    <header class="panel-heading text-center">
+
+                        登陆
+
+                    </header>
+
+                    <form action="/admin/index/login" class="padder" method="post">
+
+
+                        <div class="block">
+
+                            <label class="control-label">用户名</label>
+
+                            <input type="text" name="name" placeholder="请输入用户名" class="form-control" >
+
+                        </div>
+
+                        <div class="block">
+
+                            <label class="control-label">密码</label>
+
+                            <input type="password" name="password" id="inputPassword" placeholder="请输入密码" class="form-control" >
+
+                        </div>
+
+                        <a href="/admin/index/register" class="pull-right m-t-mini"><small>没有账号？去注册</small></a>
+
+                        <button type="submit" class="btn btn-info">登陆</button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- / footer -->
+
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+
+<script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

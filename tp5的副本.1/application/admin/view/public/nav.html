@@ -1,0 +1,20 @@
+
+<nav id="nav" class="nav-primary visible-lg nav-vertical">
+
+    <ul class="nav" data-spy="affix" data-offset-top="50">
+
+        {if $userInfo.id == 1}
+        <li {if $action == 'index' || in_array($action, ['add_user', 'update_user'])}class="active" {/if}><a href="/admin/index/index"><i class="icon-th icon-xlarge"></i>用户列表</a></li>
+        {/if}
+
+        <li {if $action == 'ticket' || in_array($action, ['add_ticket', 'update_ticket'])}class="active" {/if}><a href="/admin/index/ticket"><i class="icon-dashboard icon-xlarge"></i>车次列表</a></li>
+
+        {if $userInfo.id == 1}
+        <li {if $action == 'order' || in_array($action, ['add_order', 'update_order'])}class="active" {/if}><a href="/admin/index/order"><i class="icon-list icon-xlarge"></i>订单列表</a></li>
+        {/if}
+
+
+
+    </ul>
+
+</nav>

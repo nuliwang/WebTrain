@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>注册 - 火车票系统</title>
+
+    <meta name="description" content="mobile first, app, web app, responsive, admin dashboard, flat, flat ui">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--[if lt IE 9]>
+
+    <script src="/js/ie/respond.min.js"></script>
+
+    <script src="/js/ie/html5.js"></script>
+
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- header -->
+
+<header id="header" class="navbar bg bg-black">
+
+    <a href="#" class="btn btn-link pull-right"></a>
+
+    <a class="navbar-brand" href="#"></a>
+
+</header>
+
+<!-- / header -->
+
+<section id="content">
+
+    <div class="main padder">
+
+        <div class="row">
+
+            <div class="col-lg-4 col-offset-4 m-t-large">
+
+                <section class="panel">
+
+                    <header class="panel-heading text-center">
+
+                        注册
+
+                    </header>
+
+                    <form action="/admin/index/register" class="padder" method="post">
+
+                        <div class="block">
+
+                            <label class="control-label">用户名</label>
+
+                            <input type="text" name="name" placeholder="请输入用户名" class="form-control" value="">
+
+                        </div>
+
+                        <div class="block">
+
+                            <label class="control-label">密码</label>
+
+                            <input type="password" name="password" placeholder="请输入密码" class="form-control" value="">
+
+                        </div>
+
+                        <div class="block">
+
+                            <label class="control-label">确认密码</label>
+
+                            <input type="password" name="password2" placeholder="请输入密码" class="form-control" value="">
+
+                        </div>
+
+                        <div class="block">
+
+                            <label class="control-label">性别</label>
+                            <select name="sex" class="form-control">
+                                <option value="">-请选择-</option>
+                                <option value="1">男</option>
+                                <option value="2">女</option>
+                            </select>
+                        </div>
+
+                        <div class="block">
+
+                            <label class="control-label">生日</label>
+
+                            <input type="date" class="form-control" name="birthday" id="from" value="" />
+
+                        </div>
+
+                        <div class="block">
+
+                            <label class="control-label">地址</label>
+
+                            <input type="text" class="form-control" name="address" placeholder="请输入地址" />
+
+                        </div>
+
+                        <a href="/admin/index/login" class="pull-right m-t-mini"><small>已有账号？去登陆</small></a>
+
+                        <button  type="submit" class="btn btn-info">注册</button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- / footer -->
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css?v1.81" />
+
+<!-- Bootstrap -->
+
+<script src="/js/bootstrap.js"></script>
+<!--<script>-->
+    <!--$(function () {-->
+        <!--var week = ["日", "一", "二", "三", "四", "五", "六"];-->
+        <!--var month = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];-->
+
+        <!--//日期-->
+        <!--var date = "";-->
+        <!--var max_date = new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000);-->
+
+        <!--var from = $("#from").datepicker({-->
+            <!--dateFormat: "yy-mm-dd",-->
+            <!--//minDate : new Date(),-->
+            <!--maxDate: max_date,-->
+            <!--dayNamesMin: week,-->
+            <!--monthNames: month,-->
+            <!--monthNamesShort: month,-->
+            <!--showAnim: "",-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+
+</body>
+
+</html>
